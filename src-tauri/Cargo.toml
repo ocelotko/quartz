@@ -1,18 +1,19 @@
 [package]
-name = "app"
+name = "quartz"
 version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
-license = ""
-repository = ""
+description = "Decentralized Peer-to-Peer Application Based on Matrix Chat Protocol"
+authors = ["ocelot, shitkid22"]
+license = "GPL - 3.0 or later"
+repository = "https://github.com/ocelotko/quartz.git"
 default-run = "app"
-edition = "2021"
+edition = "2024"
 rust-version = "1.60"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [build-dependencies]
 tauri-build = { version = "1.5.3", features = [] }
+dotenv = "0.15.0"
 
 [dependencies]
 serde_json = "1.0"
@@ -20,6 +21,7 @@ serde = { version = "1.0", features = ["derive"] }
 tauri = { version = "1.7.0", features = [] }
 matrix-sdk = "0.7.1"
 tokio = { version = "1.38.0", features = ["full"] }
+dotenv = "0.15"
 
 [features]
 # this feature is used for production builds or when `devPath` points to the filesystem and the built-in dev server is disabled.

@@ -1,3 +1,4 @@
 fn main() {
-  tauri_build::build()
+  dotenv::dotenv().ok();
+  tauri_build::build();
 }
