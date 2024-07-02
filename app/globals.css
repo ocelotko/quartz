@@ -1,11 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+  font-family: Arial, sans-serif;
+}
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 2rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,34 +19,16 @@
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* font-family: ; */
-}
-
 body {
-  background-image: url("../public/backdrop-temp.png");
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  color: white;
+  color: rgb(var(--foreground-rgb));
+  padding: 1rem;
 }
 
-.container {
-  width: 90vw;
-  height: 90vh;
-  background: linear-gradient(#242424b0, #121212b0);
-  backdrop-filter: blur(20px);
-  border-radius: 14px;
-  border: 2px solid rgba(255, 255, 255, 0.25);
-  display: flex;
+button:hover {
+  background-color: #21a1f1;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+p {
+  margin-top: 20px;
+  color: green;
 }
