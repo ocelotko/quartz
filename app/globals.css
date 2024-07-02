@@ -1,14 +1,11 @@
-body {
-  font-family: Arial, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 0 2rem;
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,11 +21,8 @@ body {
   padding: 1rem;
 }
 
-button:hover {
-  background-color: #21a1f1;
-}
-
-p {
-  margin-top: 20px;
-  color: green;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }

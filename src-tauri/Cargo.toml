@@ -5,10 +5,6 @@ description = "Decentralized Peer-to-Peer Application Based on Matrix Chat Proto
 authors = ["Jakub Hachlinec, shitkid22"]
 license = "GPL-3.0 or later"
 repository = "https://github.com/ocelotko/quartz.git"
-<<<<<<< HEAD
-default-run = "quartz"
-=======
->>>>>>> 61cb2633cd83d0675ef1d54daa5ab9309bc08722
 edition = "2021"
 rust-version = "1.60"
 
