@@ -16,9 +16,30 @@
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: ; */
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  padding: 1rem;
+  background-image: url("../public/backdrop-temp.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.container {
+  width: 90vw;
+  height: 90vh;
+  background: linear-gradient(#242424b0, #121212b0);
+  backdrop-filter: blur(20px);
+  border-radius: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  display: flex;
 }
 
 @layer utilities {

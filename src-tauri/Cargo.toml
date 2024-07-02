@@ -2,11 +2,11 @@
 name = "quartz"
 version = "0.1.0"
 description = "Decentralized Peer-to-Peer Application Based on Matrix Chat Protocol"
-authors = ["ocelot, shitkid22"]
-license = "GPL - 3.0 or later"
+authors = ["Jakub Hachlinec, shitkid22"]
+license = "GPL-3.0 or later"
 repository = "https://github.com/ocelotko/quartz.git"
-default-run = "app"
-edition = "2024"
+default-run = "quartz"
+edition = "2021"
 rust-version = "1.60"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
