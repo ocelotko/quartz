@@ -17,8 +17,13 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: #fff;
+  background: #121212;
   padding: 1rem;
+}
+
+.app-container {
+  color: #fff;
 }
 
 @layer utilities {
