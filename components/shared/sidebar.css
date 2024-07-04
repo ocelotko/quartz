@@ -1,0 +1,65 @@
+.button-hover-effect {
+    width: 50px; /* Set a fixed width for all buttons */
+    height: 50px; /* Set a fixed height for all buttons */
+    background-color: transparent;
+    border: 2px solid transparent; /* Ensure outline is always visible */
+    cursor: pointer;
+    transition: border-color 0.3s ease, color 0.3s ease; /* Transition for hover effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button-hover-effect:hover,
+  .button-active {
+    border-color: #b58eff; /* Change outline color on hover and when active */
+  }
+  
+  .button-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .button-icon {
+    color: white; /* Set default color for icons */
+    transition: color 0.3s ease; /* Transition for icon color change */
+    margin-bottom: 4px; /* Adjust spacing between icon and text */
+  }
+  
+  .button-hover-effect:hover .button-icon,
+  .button-active .button-icon {
+    color: #b58eff; /* Change icon color on hover and when active */
+  }
+  
+  .button-text {
+    color: white;
+    font-size: 12px; /* Font size for text */
+    transition: color 0.3s ease; /* Transition for text color change */
+  }
+  
+  .button-hover-effect:hover .button-text,
+  .button-active .button-text {
+    color: #b58eff; /* Change text color on hover and when active */
+  }
+  
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #4a4a4a #1e1e1e;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #1e1e1e;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #4a4a4a;
+    border-radius: 10px;
+  }
+  
