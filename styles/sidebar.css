@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar-button {
+  @apply flex flex-col items-center justify-center p-2 bg-transparent;
+}
+
+.circle-container {
+  @apply flex items-center justify-center w-10 h-10 rounded-full bg-neutral-500 bg-opacity-0;
+}
+
+.active .circle-container {
+  @apply bg-primary-400;
+}
+
+.button-icon {
+  @apply text-2xl transition-transform duration-200;
+}
+
+.button-text {
+  @apply text-sm mt-2  h-[1em] text-center transition-all duration-200;
+}
+
+.sidebar-button:hover .button-icon,
+.sidebar-button.active .button-icon {
+  @apply scale-110;
+}
+
+.sidebar-button:hover .button-text,
+.sidebar-button.active .button-text {
+  @apply opacity-100;
+}
+
+.sidebar-button.pressed .button-icon {
+  @apply scale-95;
+}
+
+.sidebar-button.pressed .button-text {
+  @apply opacity-75;
+}
+
+/* Right sidebar gradient border */
+.rightsidebar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #b58eff);
+}
+
+.spin-on-hover {
+  transition: transform 0.5s;
+}
+
+.spin-on-hover:hover {
+  transform: rotate(-180deg);
+}

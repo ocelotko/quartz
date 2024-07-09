@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import "../globals.css";
+import "@/styles/globals.css";
 import LeftSidebar from "@/components/shared/left-sidebar";
+import RightSidebar from "@/components/shared/right-sidebar";
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -32,14 +33,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${`${montserrat.variable} font-sans`} flex items-start justify-between`}>
-        <main>
+      <body className={`${`${montserrat.variable} font-sans`} flex items-start justify-between overflow-hidden bg-material-900`}>
+        <main className="flex flex-row">
           <LeftSidebar/>
           <section className="main-container">
             <div className="w-full max-w-4xl">
               {children}
             </div>
           </section>
+          <RightSidebar/>
         </main>
       </body>
     </html>
